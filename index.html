@@ -14,7 +14,18 @@
 
 <body>
 
-    <ul class="menu">
+    <nav class="navbar-inverse my_nav_bar">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        </div>
+        
+    </nav>
+    <div class="collapse navbar-collapse" id="myNavbar">
+    <ul class="nav navbar-nav">
         <li class="links">
             <a href="#welcome">HOME</a>
         </li>
@@ -31,6 +42,8 @@
         <a href="#contact">CONTACT</a>
         </li>
     </ul>
+    </div>
+    
     
     <section id="welcome">
         <div class="paralax-iner">
@@ -76,7 +89,7 @@
         <div class="line"></div>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2469.808984134496!2d-1.256555484220915!3d51.75481637967651!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876c6a9ef8c485b%3A0xd2ff1883a001afed!2sUniversity%20of%20Oxford!5e0!3m2!1sen!2sau!4v1634720430008!5m2!1sen!2sau" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     
-    <div class="contact_1"><a href="mailto:my@gmail.com?Subject=hello">
+    <div class="contact_1 col-lg-6 col-md-6 col-sm-6 col-xs-12"><a href="mailto:my@gmail.com?Subject=hello">
         
     <i class="fa fa-envelope"></i>
         &nbsp;
@@ -93,6 +106,26 @@
  &nbsp;
         <h3>@tim.berners.lee
 </h3></a>
+        </div>
+        
+        <div class="contact_2 col-lg-6 col-md-6 col-sm-6 col-xs-12">
+        <form>
+            <span>
+            Name:
+            </span>
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            <input type="text" name="name" required>
+            <br>
+            <br>
+            <span>Comment:</span>
+            <input type="text" name="Comment" required>
+            <br>
+            <br>
+            <input type="submit" value="submit" class="btn btn-success">
+            </form>
         </div>
         
     </section>
